@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/UserIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="3"
+        android:layout_toRightOf="@id/UserIcon"
+        android:text="thehappyguy"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserName"
+        android:layout_toRightOf="@id/UserIcon"
+        android:text="Nice Voice!"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/PostedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Comment"
+        android:layout_toRightOf="@id/UserIcon"
+        android:text="10 minutes ago"
+        android:textSize="20sp" />
+</RelativeLayout>

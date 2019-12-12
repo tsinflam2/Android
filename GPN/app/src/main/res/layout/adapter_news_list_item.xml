@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/UserIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="3"
+        android:layout_toRightOf="@id/UserIcon"
+        android:text="thehappyguy"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/PostedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserName"
+        android:layout_toRightOf="@id/UserIcon"
+        android:text="1 hours ago"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/distance"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_column="1"-->
+    <!--android:text="5km"-->
+    <!--android:textSize="15sp" />-->
+
+
+    <TextView
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Report"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/NewsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserIcon"
+        android:text="News Title: I meet Nelson!"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!--<com.devsmart.android.ui.HorizontalListView-->
+    <!--android:id="@+id/NewsContentWrap"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:background="#ddd"-->
+    <!--android:layout_below="@id/NewsTitle"-->
+    <!--/>-->
+    <HorizontalScrollView
+        android:id="@+id/NewsContentWrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NewsTitle">
+
+        <LinearLayout
+            android:id="@+id/NewsContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <!--<WebView-->
+            <!--android:id="@+id/NewsContent"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/NewsTitle"></WebView>-->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <ImageButton
+        android:id="@+id/FavouriteIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:src="@drawable/favouriteicon"
+        android:layout_below="@+id/NewsContentWrap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/FavouriteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/FavouriteIcon"
+        android:layout_toEndOf="@id/FavouriteIcon"
+        android:layout_toRightOf="@id/FavouriteIcon"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/commentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="0 Comments"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/FavouriteCount"
+        android:layout_alignLeft="@+id/PostedTime"
+        android:layout_alignStart="@+id/PostedTime" />
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/commentCount"
+        android:layout_alignLeft="@+id/report"
+        android:layout_alignStart="@+id/report" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gpnlimited.gpn.NewsActivity">
+    <item
+        android:id="@+id/ser_1"
+        android:orderInCategory="100"
+        android:title="Main Server"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ser_2"
+        android:orderInCategory="100"
+        android:title="Backup Server"
+        app:showAsAction="never" />
+</menu>

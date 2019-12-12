@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/ReceivedUserIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/ReceivedMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recevied!"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ReceivedUserIcon"
+        android:layout_toEndOf="@id/ReceivedUserIcon" />
+
+
+
+</RelativeLayout>

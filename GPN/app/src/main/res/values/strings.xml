@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GPN</string>
+    <string name="choose_action">Choose Action :</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_pm">PMActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string-array name="titles">
+        <item>thehappyguy</item>
+        <item>loljenny2100</item>
+        <item>dob</item>
+        <item>whistle_blower</item>
+        <item>thecomputerguy</item>
+        <item>busuncle</item>
+    </string-array>
+
+    <array name="action_array_for_capturing">
+        <item>Take Photo</item>
+        <item>Gallery Photo</item>
+        <item>Recording Video</item>
+        <item>By Youtube ID</item>
+    </array>
+    <array name="icons">
+        <item>@drawable/usernoimage</item>
+        <item>@drawable/usernoimage</item>
+        <item>@drawable/usernoimage</item>
+        <item>@drawable/usernoimage</item>
+        <item>@drawable/usernoimage</item>
+        <item>@drawable/usernoimage</item>
+    </array>
+
+    <string name="title_activity_test_view_pager">TestViewPager</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_map_testing">MapTestingActivity</string>
+    <string name="title_activity_test_camera">TestCamera</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_camera_activity_listview">CameraActivityListview</string>
+    <string name="title_activity_try">Try</string>
+    <string name="title_activity_test_get_pic">TestGetPic</string>
+    <string name="title_activity_test_camera_retrieve">TestCameraRetrieve</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_ion_image_view_testing">IonImageViewTesting</string>
+    <string name="title_activity_dynamicaaly_create_image_view_tesing">
+        DynamicaalyCreateImageViewTesing
+    </string>
+    <string name="title_activity_test_place">TestPlaceActivity</string>
+    <string name="title_activity_test_upload">TestUploadActivity</string>
+    <string name="title_activity_upload_youtube">UploadYoutubeActivity</string>
+    <string name="title_activity_test_ion_load_bitmap">TestIonLoadBitmap</string>
+    <string name="title_activity_test_youtube_upload_data_api">testYoutubeUploadDataAPI</string>
+    <string name="title_activity_messenger">MessengerActivity</string>
+
+</resources>

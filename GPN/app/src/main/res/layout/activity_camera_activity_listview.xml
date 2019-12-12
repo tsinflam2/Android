@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutUtterMost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutForButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/AddMore"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Add Media"
+            android:layout_weight="0.50" />
+
+        <Button
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Post (Submit) "
+            android:id="@+id/Post"
+            android:layout_weight="0.50" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutForListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<ListView-->
+            <!--android:id="@+id/ThumbnailsListView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300dp"></ListView>-->
+        <ImageView
+            android:id="@+id/RetrievedPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <com.devsmart.android.ui.HorizontalListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#ddd"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
